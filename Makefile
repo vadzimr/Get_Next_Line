@@ -3,7 +3,7 @@ FLAGS = -Wall -Wextra -Werror
 SRC    =  *.c
 OBJ    =  *.o 
 
-HEADERS = -I libft.h
+HEADERS = -I get_next_line.h
 
 all: $(NAME)
 
