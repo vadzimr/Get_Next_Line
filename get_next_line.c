@@ -1,24 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vrayinch <vrayinch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/04 07:50:13 by vrayinch          #+#    #+#             */
-/*   Updated: 2020/02/13 15:27:13 by vrayinch         ###   ########.fr       */
+/*   Created: 2020/02/13 15:21:38 by vrayinch          #+#    #+#             */
+/*   Updated: 2020/02/28 13:00:07 by vrayinch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#include <fcntl.h>
+#include <stdio.h>
 
-# include "libft/libft.h"
-# include <fcntl.h>
+int main(void)
+{
+int fd;
+int fd1;
 
-# define MAX_FD 4096
-# define BUFF_SIZE 32
+char buf[14];
 
-int	get_next_line(const int fd, char **line);
+fd = open("test_file.txt", O_RDONLY, 0);
+printf("fd is: %d\n", fd);
 
-#endif
+
+read(fd1, buf, 5);
+
+printf("buf: %s\n", buf);
+    return (0);
+}
+
