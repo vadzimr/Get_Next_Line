@@ -1,4 +1,13 @@
-.DS_Store
+*~
+*#*#
+.*
+!.gitignore
 *.o
-Mkfile.old
-*.lib
+materials/*
+testing/*
+README.md
+cleantrash
+fdf
+libft/libft.a
+*.h.gch
+a.out
